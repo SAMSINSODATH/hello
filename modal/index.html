@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Modal -->
+<div class="modal fade" id="ClickMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            ...
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --dark-bg: #2c3e50;
+            --light-text: #ecf0f1;
+            --primary-red: #d32f2f;      
+            --accent-yellow: #fbc02d;
+            --heading-font: 'Helvetica Neue', sans-serif;
+            --base-size: 16px;
+        }
+        .bg-color {
+            background-color: var(--primary-red);
+            color: var(--light-text);
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .img-container {
+            width: 110px;
+            height: 50px;
+        }
+        .stock-badge {
+            padding: 5px 20px;
+            border-radius: 20px;
+            border: #fbc02d 1px solid;
+        }
+        td, th {
+            vertical-align: middle; /* Kept clean layout alignment */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container bg-white mt-2">
+            <div class="d-flex justify-content-between align-items-center my-3">
+                <h3 class="fw-bold m-0">List Of Products</h3>
+                <button class="btn bg-color py-2 px-4" data-bs-toggle="modal" data-bs-target="#ClickMe">Add To Product</button>
+            </div>
+            
+            <div class="container px-5 mt-3">
+                <table class="table table-bordered align-middle">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Number</th>
+                            <th>Day of create</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Computer</td>
+                            <td class="img-container">
+                                <img class="img-fluid rounded" src="https://i.pinimg.com/736x/8c/31/1e/8c311e5c7bbab4f07385c57321617bc6.jpg" alt="Computer">
+                            </td>
+                            <td>$999.99</td>
+                            <td><span class="stock-badge">50</span></td>
+                            <td>A lot of</td>
+                            <td>7/7/2026</td>
+                            <td>
+                                <button class="btn btn-danger py-2 px-4 fw-bold">Delete</button>
+                                <button class="btn btn-warning py-2 px-4 fw-bold">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ClickMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Product dynamic form elements go here...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

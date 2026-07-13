@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    /* Base Styles: Extra Small screens (Mobile, < 576px) */
+    .custom-box {
+        padding: 40px;
+        background-color: #3d0fa8;
+        border: 1px solid;
+    }
+
+    /* Small devices (Tablets, 576px and up) */
+    @media (min-width: 576px) {
+        .custom-box {
+            background-color: #5cc33c !important;
+        }
+    }
+
+    /* Medium devices (Laptops, 768px and up) */
+    @media (min-width: 768px) {
+        .custom-box {
+            border-right-color: aqua !important;
+        }
+    }
+
+    /* Large devices (Large desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .custom-box {
+            background-color: purple !important; 
+        }
+    }
+
+    /* Extra Large devices (Large monitors, 1200px and up) */
+    @media (min-width: 1200px) {
+        .custom-box {
+            background-color: #333333 !important; /* Changes to dark grey */
+            color: #ffffff;                       /* Turns text white */
+            padding: 50px;                        /* Increases spacing */
+        }
+    }
+</style>
+<body>
+    <div class="container bg-info">
+        <div class="row">
+            <div class="col-6 col-sm-3 col-md-4 custom-box ">1</div>
+            <div class="col-6 col-sm-3 col-md-4 custom-box ">2</div>
+            <div class="col-6 col-sm-3 col-md-4 custom-box ">1</div>
+            <div class="col-6 col-sm-3 col-md-4 custom-box ">2</div>
+            <div class="col-6 col-sm-3 col-md-4 custom-box ">1</div>
+            <div class="col-6 col-sm-3 col-md-4 custom-box ">2</div>
+        </div>
+    </div>
+</body>
+<script scr="js/bootstrap.js"></script>
+</html>

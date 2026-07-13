@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --dark-bg: #2c3e50;
+    --light-text: #ecf0f1;
+    --primary-red: #d32f2f;      
+    --accent-yellow: #fbc02d;
+    --heading-font: 'Helvetica Neue', sans-serif;
+    --base-size: 16px;
+    }
+    .bg-color{
+        background-color: var(--primary-red);
+        color: var(--light-text);
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .img{
+        width:110px;
+        height:50px;
+    }
+    span{
+        padding: 5px 20px;
+        border-radius: 20px;
+        border: non;
+        border:#fbc02d 1px solid;
+    }
+    th, td{
+        vertical-align: top;
+    }
+    .form-group1{
+        width:100px;
+        height:100px;
+    }
+    .img-form{
+        width:100px;
+        height:100px;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="container bg-white mt-2 ">
+            <div class="d-flex justify-content-between">
+                <h3 class="fw-bold">List Of Product</h3>
+                <button class="btn bg-color py-2 px-4" data-bs-toggle="modal" data-bs-target="#ClickMe">Add To Product</button>
+            </div>
+            <div class="container px-5 mt-3">
+                <div class="alert alert-primary fw-bold text-info">Input Product Sucessfulty</div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Number</th>
+                            <th>Day of create</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Computer</td>
+                            <td class="img">
+                                <img class="img-fluid rounded" src="https://i.pinimg.com/736x/8c/31/1e/8c311e5c7bbab4f07385c57321617bc6.jpg" alt="Computer">
+                            </td>
+                            <td>$999.99</td>
+                            <td><span class="stock-badge">50</span></td>
+                            <td>A lot of</td>
+                            <td>7/7/2026</td>
+                            <td>
+                                <button class="btn btn-danger py-2 px-4 fw-bold">Delete</button>
+                                <button class="btn btn-warning py-2 px-4 fw-bold">Edit</button>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+                <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+</nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ClickMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Your Name"
+                        aria-describedby="helpId"
+                    />
+                    <input
+                        type="text"
+                        class="form-control mt-3"
+                        placeholder="Enter Your Name"
+                    />
+                    <input
+                        type="text"
+                        class="form-control mt-3"
+                        placeholder="Enter Your Price"
+                    />
+                    <input
+                        type="text"
+                        class="form-control mt-3"
+                        placeholder="Enter Your Stock"
+                    />
+                    <input
+                        type="text"
+                        class="form-control mt-3"
+                        placeholder="Enter Your INT"
+                    />
+                    <div class="form-group1">
+                        <img class="img-form" src="https://i.pinimg.com/1200x/42/8c/7c/428c7c0ae44f588735c87b4135f3d539.jpg" alt="">
+                    </div>
+                    <small id="helpId" class="text-body-secondary">Help text</small>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
